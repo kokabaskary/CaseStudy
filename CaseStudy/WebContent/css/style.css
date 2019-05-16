@@ -1,0 +1,163 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #E41AAE;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+
+a:hover {
+    color: #f8bbd0;
+    text-decoration: underline;
+}
+//------------------------
+h3 { font-size: .8rem; }
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ff008b;
+    text-align: left;
+    background-color: #fff;
+}
+.navbar .dropdown-menu {
+    position: absolute!important;
+    margin-top: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #8e24aa purple darken-1;
+  text-align: left;
+  list-style: none;
+  background-color: #B39DDB;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color:  #FF008B;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #f8bbd0;
+  text-decoration: none;
+  background-color: #9575CD;
+}
+
+.dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #f8bbd0;
+  
+}
+footer.page-footer a {
+    color: #FF008B;
+}
+/**==============================LOGIN FORM ================================ */
+
+.pink-text {
+    color: #e41aae!important;
+}
+.form-dark .font-small {
+font-size: 0.8rem; }
+
+.form-dark [type="radio"] + label,
+.form-dark [type="checkbox"] + label {
+font-size: 0.8rem; }
+
+.form-dark [type="checkbox"] + label:before {
+top: 2px;
+width: 15px;
+height: 15px; }
+
+.form-dark .md-form label {
+color: #fff; }
+
+.form-dark input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #00C851;
+-webkit-box-shadow: 0 1px 0 0 #00C851;
+box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=text]:focus:not([readonly]) + label {
+color: #fff; }
+
+.form-dark input[type=password]:focus:not([readonly]) {
+border-bottom: 1px solid #00C851;
+-webkit-box-shadow: 0 1px 0 0 #00C851;
+box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=password]:focus:not([readonly]) + label {
+color: #fff; }
+
+.form-dark input[type="checkbox"] + label:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 17px;
+height: 17px;
+z-index: 0;
+border: 1.5px solid #fff;
+border-radius: 1px;
+margin-top: 2px;
+-webkit-transition: 0.2s;
+transition: 0.2s; }
+
+.form-dark input[type="checkbox"]:checked + label:before {
+top: -4px;
+left: -3px;
+width: 12px;
+height: 22px;
+border-style: solid;
+border-width: 2px;
+border-color: transparent #00c851 #00c851 transparent;
+-webkit-transform: rotate(40deg);
+-ms-transform: rotate(40deg);
+transform: rotate(40deg);
+-webkit-backface-visibility: hidden;
+-webkit-transform-origin: 100% 100%;
+-ms-transform-origin: 100% 100%;
+transform-origin: 100% 100%; }
+
+/**==============================Logo Image ================================ */
+.container {
+  position: relative; 
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/**=================================================================*/
+
