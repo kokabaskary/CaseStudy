@@ -21,7 +21,7 @@ public class LoginServiceImpl implements LoginService {
 	//constructor
 	@Autowired
 	public LoginServiceImpl(LoginUserRepository repository) {
-		super();
+		
 		this.repository = repository;
 	}
 

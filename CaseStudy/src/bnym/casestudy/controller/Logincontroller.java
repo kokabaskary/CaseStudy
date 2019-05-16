@@ -47,21 +47,21 @@ public class Logincontroller {
 
 
 //
-//	@RequestMapping(value = "/saveLogin", method = RequestMethod.POST)//======================= step-1 for validation
-//	public ModelAndView submitLoginUser(
-//			@Valid @ModelAttribute("loginUser") LoginUser loginUser, BindingResult result) {
-//			loginService.saveLoginUser(loginUser);
-//				if (result.hasErrors()) {
-//					ModelAndView model = new ModelAndView("login");
-//					return model;
-//				}
-//				ModelAndView model = new ModelAndView("index");
-//				
-//				return model;
-//
-//			}
+	@RequestMapping(value = "/saveLogin", method = RequestMethod.POST)//======================= step-1 for validation
+	public ModelAndView submitLoginUser(
+			@Valid @ModelAttribute("loginUser") LoginUser loginUser, BindingResult result) {
+			loginService.saveLoginUser(loginUser);
+				if (result.hasErrors()) {
+					ModelAndView model = new ModelAndView("login");
+					return model;
+				}
+				ModelAndView model = new ModelAndView("index");
+				
+				return model;
+
+			}
+////	
 //	
-	
 	
 //	 @RequestMapping(value = "/login", method = RequestMethod.GET)
 //	    public String viewLogin(Map<String, Object> model) {
