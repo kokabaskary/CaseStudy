@@ -49,7 +49,7 @@ public class Logincontroller {
 //
 	@RequestMapping(value = "/saveLogin", method = RequestMethod.POST)//======================= step-1 for validation
 	public ModelAndView submitLoginUser(
-			@Valid @ModelAttribute("loginUser") LoginUser loginUser, BindingResult result) {
+			@Valid @ModelAttribute("Loginuser") LoginUser loginUser, BindingResult result) {
 			loginService.saveLoginUser(loginUser);
 				if (result.hasErrors()) {
 					ModelAndView model = new ModelAndView("login");

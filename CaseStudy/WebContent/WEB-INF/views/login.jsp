@@ -44,7 +44,7 @@
 
         <!--Body-->
         <form:form action="/CaseStudy/saveLogin" method="POST"
-			modelAttribute="loginUser">
+			modelAttribute="Loginuser">
 			<div class="form-group md-form pink-text">
 				
 				<form:input type="email" class="form-control  deep-purple-text"
