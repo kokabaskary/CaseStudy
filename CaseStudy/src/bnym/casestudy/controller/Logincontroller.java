@@ -33,23 +33,23 @@ public class Logincontroller {
 		this.loginService = loginService;
 	}
 	
-	@RequestMapping("/login") //========================================================== step-1 for validation
-	public ModelAndView getLoginUser(Model loginUser) {
-		
-		loginUser.addAttribute("loginUser", new LoginUser());
-		
-		ModelAndView model = new ModelAndView("login");
 	
-		return model;
-
-	}
-	
-
-
+//	
+//	@RequestMapping("/login") //========================================================== step-1 for validation
+//	public ModelAndView getLoginUser(Model loginUser) {
+//		
+//		loginUser.addAttribute("loginUser", new LoginUser());
+//		
+//		ModelAndView model = new ModelAndView("login");
+//	
+//		return model;
+//
+//	}
+//	
 //
 	@RequestMapping(value = "/saveLogin", method = RequestMethod.POST)//======================= step-1 for validation
 	public ModelAndView submitLoginUser(
-			@Valid @ModelAttribute("Loginuser") LoginUser loginUser, BindingResult result) {
+			@Valid @ModelAttribute("loginUser") LoginUser loginUser, BindingResult result) {
 			loginService.saveLoginUser(loginUser);
 				if (result.hasErrors()) {
 					ModelAndView model = new ModelAndView("login");
@@ -60,29 +60,4 @@ public class Logincontroller {
 				return model;
 
 			}
-////	
-//	
-	
-//	 @RequestMapping(value = "/login", method = RequestMethod.GET)
-//	    public String viewLogin(Map<String, Object> model) {
-//		 
-//		 	LoginUser loginUser = new LoginUser();
-////	        User user = new User();
-//	        model.put("userForm", loginUser);
-//	        return "login";
-//	    }
-//	 
-//	 //============================================================
-//	 
-//	    @RequestMapping(value = "/login", method = RequestMethod.POST)
-//	    public String doLogin(@Valid @ModelAttribute("userForm") LoginUser loginUser,
-//	            BindingResult result, Map<String, Object> model) {
-//	 
-//	        if (result.hasErrors()) {
-//	            return "login";
-//	        }
-//	 
-//	        return "loginSuccess";
-//	    }
-
 }

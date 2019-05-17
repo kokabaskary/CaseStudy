@@ -48,8 +48,8 @@
 						<td>${customer.fName}</td>
 						<td>${customer.lName}</td>
 						<td>${customer.sMobile}</td>
-						<td>${customer.email}</td>
-						<td>${customer.password}</td>
+						<td>${customer.loginUser.email}</td>
+						<td>${customer.loginUser.password}</td>
 						<td>${customer.street}</td>
 						<td>${customer.city}</td>
 						<td>${customer.state}</td>

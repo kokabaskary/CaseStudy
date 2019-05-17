@@ -56,18 +56,18 @@
 				<label for="email">Email: *</label> 
 				<form:input type="email"
 							class="form-control" id="email" placeholder="Enter email"
-							path="user.email"/>
+							path="loginUser.email"/>
 							<small> 
-				<form:errors path="user.email" cssClass="errormsg" />
+				<form:errors path="loginUser.email" cssClass="errormsg" />
 				</small>
 			</div>
 			<div class="form-group">
 						<label for="pwd">Password: *</label>
 						 <form:input type="password"
 							class="form-control" id="pwd" placeholder="Enter password"
-							path="user.password"/>
+							path="loginUser.password"/>
 							<small> 
-				<form:errors path="user.password" cssClass="errormsg" />
+				<form:errors path="loginUser.password" cssClass="errormsg" />
 				</small>
 			</div>
 			

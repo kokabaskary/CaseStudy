@@ -49,9 +49,10 @@
 						<td><form:hidden path="id" /></td>
 						<td><form:input path="fName" /></td>
 						<td><form:input path="lName" /></td>
-						<td><form:input path="email" /></td>
+						<td><form:input path="loginUser.email" /></td>
+						<td><form:input path="loginUser.password" /></td>
 						<td><form:input path="sMobile" /></td>
-						<td><form:input path="password" /></td>
+						
 						<td><form:input path="street" /></td>
 						<td><form:input path="city" /></td>
 						<td><form:input path="state" /></td>

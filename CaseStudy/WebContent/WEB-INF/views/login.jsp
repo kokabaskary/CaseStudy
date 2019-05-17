@@ -43,11 +43,40 @@
         </div>
 
         <!--Body-->
-        <form:form action="/CaseStudy/saveLogin" method="POST"
-			modelAttribute="Loginuser">
+        
+     <form action="">
 			<div class="form-group md-form pink-text">
 				
-				<form:input type="email" class="form-control  deep-purple-text"
+				<input type="email" class="form-control  deep-purple-text"
+					 name="loginUser.email" placeholder="Enter Email" />
+					 <label for="Form-email5">Your Email:*</label>
+				
+			</div>
+			<div class="form-group md-form pb-3">
+				
+				<input type="password" class="form-control  pink-text" 
+					 name="loginUser.password" placeholder="Enter password" id="Form-pass5" />
+					 <label for="Form-pass5">Your Password:*</label>
+				
+			</div>
+       
+
+        <!--Grid row-->
+        <div class="row d-flex align-items-center mb-4">
+
+            <!--Grid column-->
+            <div class="text-center mb-3 col-md-12" >
+                <button type="button" class="btn btn purple-gradient btn-block btn-rounded z-depth-1">Login</button>
+            </div>
+            <!--Grid column-->
+        </div>
+        </form>
+        
+       <%--  <form:form action="/CaseStudy/saveLogin" method="POST"
+			modelAttribute="loginUser">
+			<div class="form-group md-form pink-text">
+				
+				<zinput type="email" class="form-control  deep-purple-text"
 					 path="loginUser.email" placeholder="Enter Email" />
 					 <label for="Form-email5">Your Email:*</label>
 				<small> 
@@ -74,7 +103,7 @@
             </div>
             <!--Grid column-->
         </div>
-        </form:form>
+        </form:form> --%>
         <!--Grid row-->
 
         <!--Grid column-->

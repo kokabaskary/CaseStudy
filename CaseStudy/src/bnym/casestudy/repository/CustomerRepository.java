@@ -12,6 +12,6 @@ import bnym.casestudy.entity.Customer;
 @Repository
 public interface CustomerRepository extends CrudRepository<Customer, Long>{
 	
-	List<Customer> findByfNameIgnoreCaseAndLNameIgnoreCaseAndLoginUserEmail(String fName, String lName,String email);
+//	List<Customer> findByfNameIgnoreCaseAndLName(String fName, String lName);
 
 }

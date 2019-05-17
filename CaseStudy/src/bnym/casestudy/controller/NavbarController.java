@@ -82,13 +82,13 @@ public class NavbarController {
 
 		
 ////	//==================Controller for Login page====================
-//	@RequestMapping(value={"/login"})
-//	public ModelAndView getLoginPage() {
-//		ModelAndView mav = new ModelAndView("login");
-//		return mav;
-//		
-//	}
-//	
+	@RequestMapping(value={"/login"})
+	public ModelAndView getLoginPage() {
+		ModelAndView mav = new ModelAndView("login");
+		return mav;
+		
+	}
+	
 	//=============Image Gallery Controller============
 	
 	

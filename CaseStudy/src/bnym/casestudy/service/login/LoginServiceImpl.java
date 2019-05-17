@@ -9,19 +9,22 @@ import bnym.casestudy.entity.LoginUser;
 
 import bnym.casestudy.repository.LoginUserRepository;
 
-
 @Service
 @Transactional
 public class LoginServiceImpl implements LoginService {
-	
-	
-	private LoginUserRepository repository;
-	
 
-	//constructor
+	private LoginUserRepository repository;
+
+	
+	// constructor
+	
+	public LoginServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Autowired
 	public LoginServiceImpl(LoginUserRepository repository) {
-		
+
 		this.repository = repository;
 	}
 

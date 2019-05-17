@@ -32,7 +32,7 @@ public class LoginUser {
 
 	public LoginUser(Long id, @NotEmpty @Email(message = "Please provide you email") String email,
 			@NotEmpty(message = "Please enter your password.") String password) {
-		
+		super();
 		this.id = id;
 		this.email = email;
 		this.password = password;
@@ -41,7 +41,6 @@ public class LoginUser {
 
 	// ===========================Getters and Setters=========================
 	
-
 	public Long getId() {
 		return id;
 	}
@@ -70,6 +69,6 @@ public class LoginUser {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
+	
 
 }
